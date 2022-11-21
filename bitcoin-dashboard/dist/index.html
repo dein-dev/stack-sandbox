@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>Sandbox - Buy & Sell Digital Assets In The cryptex</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'>
+    <link rel="stylesheet" href="/bitcoin-dashboard/dist/style.css">
+
+  </head>
+
+  <body>
+
+    <main>
+      <header>
+        <div class="icon" style="font-weight: bolder; color: rgba(0, 0, 0, 0.707); cursor: pointer;">
+          SANDBOX
+        </div>
+        <nav>
+          <div class="balance">
+            <p tabindex="0">0.0025 ₿</p>
+            <p tabindex="0">219.63 USD</p>
+          </div>
+          
+          <strong style="font-family: bolder; font-size: 18px; margin-left: 20px; font-weight: bolder; opacity: 0.7;">Wallet</strong>
+
+          <a style="padding-left: 5px;"><img src="/cryptex/assets/images/wallet-alt-regular-24.png" height="30px" width="40px" alt=""> </a>
+
+          <ul class="drop-down-menu">
+            <i class="fa-solid fa-angle-down"></i>
+          </ul>
+        </nav>
+      </header>
+      <section>
+        <p style="font-size: 33px; "><span>Deposit</span> </p>
+        <div class="operation">
+          <div class="operation-amount">
+           
+            <form action="">
+              <div>
+                <h1  style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">Select Coin</h1>
+                <br>
+                
+                <select name="currency" id="curncy">
+                  <option value="bitcoin">Bitcoin (BTC)</option>
+                  <option value="ethereum">MATIC (Polygon)</option>
+                  <option value="tether">Tether (USDT)</option>
+                  <option value="solana">Solana (Sol)</option>
+                  <option value="binance-coin">Binance Coin (BNB)</option>
+                  <option value="binance-coin">United States Dollar (USD)</option>
+                </select>
+              </div>
+
+              <br>
+              <br> 
+             
+              <div>
+                <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Network</h1>
+                <br>
+                <select name="payment-method" id="method">
+                  <option>Select Network</option>
+                  <option value="bitcoin">BNB Binance Chain(BEP2)</option>
+                  <option value="ethereum">BSC Binance Smart Chian (BEP20)</option>
+                  <option value="tether">ETH Ethereum (ERC20)</option>
+                  <option value="tether">MATIC</option>
+                </select>
+          
+              </div>
+
+              <br>
+              <br>
+
+              <div>
+                <span><b>Address</b> </span> <br>
+                
+                <button id="copySale" style="text-align: center">
+                  <a href="#" target="_blank" id="saleAddress"> 0x9febB0D1dE3582612BF3D424B818f9c981387866 </a>
+                  <img src="/cryptex/assets/images/boxicons-2.1.4-PNG-24 (1)/png/bx-copy-alt.png" height="20px">
+                </button>
+                <a href="#" target="_blank"><img src="/cryptex/assets/images/boxicons-2.1.4-PNG-24/png/bx-qr.png" height="20px"></a>
+              </div>
+
+              <div class="limit">
+                <p><strong style="font-family: bolder; font-size: 15px;">Show QR CODE</strong></p> 
+                <p><strong style="font-family: bolder; font-size: 15px;">Copy Address</strong></p>
+              </div>
+
+              <div style="text-align: center" id="saleqr"></div>
+
+              <inputtype="submit" name="exchange" value="Deposit Now" id="exchange-button" />
+            </form>
+
+            <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+              Coins Will he dannsited after network confirmation.
+              <br>
+              Note : Until 2 confirmations are made, an equivalent amount of your assets will be temporarily unavailable for withdrawals.          
+            </p>
+          </div>
+          <div class="operation-details">
+            <div class="buyer-seller-info">
+              <div class="buyer">
+                <div class="info" style="margin-left: 270px;">
+                  <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bolder; font-size: 18px; color: rgba(0, 0, 0, 0.818) transparent; opacity: 0.7;" > Deposit Appeal</p>
+
+                </div>
+              </div>
+
+              <div class="seller">
+               
+                <div class="info">
+                  <p class="name" style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; margin-right: 50px; opacity: 0.7;" >Learn more</p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="operation-info" style="margin-left: 270px; text-shadow: rgb(255, 238, 206); opacity: 0.5;">
+              <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-top: 30px; font-size: 15px; justify-content: space-between; font-style: initial; line-height: 15px;"><strong> If you encounter the following problems during deposit.<br>you can retrieve your assest through the appeal function.</strong></p>
+              <ul style="text-decoration: none;">
+                <li>Deposit hasn't arrived for long time</li>
+                <li>Didn't enter MEMO/Tag correctly</li>
+                <li>Deposited unlisted coins</li>
+              </ul>
+            </div>
+
+            <br>
+            <a href="#" style="margin-left: 270px; text-decoration: none; justify-content: space-around; font-size: 20px; background-color: rgb(106, 200, 255) rgb(172, 159, 159) transparent; cursor: pointer; color: rgba(56, 59, 58, 0.543); "><span style="text-decoration: none; text-transform: capitalize; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; border-radius: 5px; border-style: solid;  "> Submit an appeal <img src="/cryptex/assets/images/boxicons-2.1.4-PNG-24/png/bx-chevron-right.png" height="15px"></span> </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+  </body>
+</html>
